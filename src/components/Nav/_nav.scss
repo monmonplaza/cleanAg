@@ -1,0 +1,21 @@
+.header {
+  &__grid {
+    display: flex;
+    justify-content: space-between;
+    nav {
+      align-self: center;
+      ul {
+        display: flex;
+        list-style: none;
+
+        li {
+          margin-left: 3rem;
+          a {
+            text-decoration: none;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}

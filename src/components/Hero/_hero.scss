@@ -1,0 +1,14 @@
+.hero {
+  &__grid__item {
+    .wrapper {
+      padding: 2rem;
+
+      h1 {
+        color: $primary;
+      }
+      h2 {
+        color: $primary-dark;
+      }
+    }
+  }
+}
