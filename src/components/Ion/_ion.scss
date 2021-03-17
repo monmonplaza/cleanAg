@@ -1,0 +1,29 @@
+.ion {
+  background-color: $primary;
+  color: $light;
+  padding: 2rem 0 26rem;
+  position: relative;
+  .wave {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    &__top {
+      bottom: 100%;
+    }
+
+    &__bottom {
+      bottom: 0%;
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5rem;
+  }
+
+  .title__block {
+    min-height: 30rem;
+    display: flex;
+    align-items: flex-end;
+  }
+}

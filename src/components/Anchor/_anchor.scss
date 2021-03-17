@@ -1,6 +1,66 @@
-.hero {
-  &__grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.btn {
+  border-radius: 3rem;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.btn--primary {
+  background-image: linear-gradient(120deg, #26a2cc, #005a8f);
+  color: $light;
+  transition: 0.5s ease;
+  border: 2px solid transparent;
+  &:hover {
+    background-image: linear-gradient(
+      120deg,
+      darken(#26a2cc, 5),
+      darken(#005a8f, 5)
+    );
+  }
+}
+
+.btn--medium {
+  padding: 0.8rem 1.6rem;
+}
+
+.btn--light {
+  background-image: linear-gradient(180deg, #fff, #8cc6f0);
+  color: $primary-dark;
+  border: 2px solid transparent;
+  &:hover {
+    background-image: linear-gradient(
+      180deg,
+      darken(#eeeeee, 5),
+      darken(#87b6d8, 5)
+    );
+  }
+}
+
+.btn--outline {
+  background-color: transparent;
+  border: 2px solid $light;
+  color: $light;
+  &:hover {
+    background-color: $light;
+    color: $primary-dark;
+  }
+}
+
+.btn--outline_light {
+  background-color: transparent;
+  border: 2px solid $light;
+  color: $light;
+  &:hover {
+    background-color: $light;
+    color: $primary-dark;
+  }
+}
+
+.btn--outline_primary {
+  background-color: transparent;
+  border: 2px solid $primary;
+  color: $primary;
+  &:hover {
+    background-color: $primary;
+    color: $light;
   }
 }

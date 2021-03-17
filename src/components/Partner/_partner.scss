@@ -1,0 +1,74 @@
+.partner {
+  margin-bottom: 10rem;
+  h2 {
+    text-align: center;
+    color: $primary;
+  }
+
+  &__body {
+    margin: 5rem 0;
+    img {
+      width: 40rem;
+      height: auto;
+      object-fit: cover;
+    }
+    .flex__item {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__bottom {
+    h3 {
+      color: $primary;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4rem;
+    &__item {
+      .wrapper {
+        text-align: center;
+      }
+    }
+  }
+
+  .timeline {
+    margin-left: 4rem;
+
+    &__item {
+      max-width: 80%;
+      position: relative;
+
+      min-height: 13rem;
+      &:last-child::after {
+        display: none;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0.8rem;
+        left: -2.6rem;
+        width: 0.2rem;
+        height: 100%;
+        background: $primary;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0.8rem;
+        left: -3rem;
+        background-color: $primary;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+      }
+      h4 {
+        color: $primary;
+      }
+    }
+  }
+}

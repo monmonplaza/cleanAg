@@ -1,0 +1,8 @@
+.page__products {
+  &__block {
+    margin-bottom: 3rem;
+    :is(small, .note, sup) {
+      font-size: 1.2rem;
+    }
+  }
+}

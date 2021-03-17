@@ -1,7 +1,19 @@
 @import "./style/variable";
 @import "./style/global";
 @import "./style/typography";
+@import "./style/mixin";
+@import "./style/utilities";
+
+@import "./style/pages/faq";
+@import "./style/pages/products";
 
 @import "./components/Nav/nav";
+@import "./components/Banner/banner";
 @import "./components/Anchor/anchor";
 @import "./components/Hero/hero";
+@import "./components/Ion/ion";
+@import "./components/Dream/dream";
+@import "./components/Partner/partner";
+@import "./components/Cta/cta";
+@import "./components/News/news";
+@import "./components/Footer/footer";

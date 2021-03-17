@@ -1,0 +1,15 @@
+.banner {
+  text-align: center;
+  font-size: 3rem;
+  padding: 3rem 0;
+  position: relative;
+  background-color: $primary;
+  color: $light;
+  margin-bottom: 20rem;
+  img {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+}
