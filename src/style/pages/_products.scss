@@ -6,3 +6,36 @@
     }
   }
 }
+
+.product__actions {
+  margin-bottom: 20rem;
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    &__items {
+      align-self: center;
+    }
+    &__items:last-child {
+      justify-self: flex-end;
+    }
+  }
+
+
+
+  h2 {
+    color: $primary;
+    font-size: 8.5rem;
+  }
+
+  h3 {
+    font-size: 5.5rem;
+    color: $primary-dark;
+    transform: translateY(-7rem);
+    margin-bottom: -5rem;
+    
+  }   
+
+  a {
+    margin-right: 3rem;
+  }
+}

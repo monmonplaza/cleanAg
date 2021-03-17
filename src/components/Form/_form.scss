@@ -1,0 +1,35 @@
+.form__group {
+    margin-bottom: 1.5rem;
+    label {
+        display: block;
+        color: $dark-1;
+        margin-bottom: .5rem;
+        font-size: 1.4rem;
+    }
+
+    input,textarea {
+        padding: .8rem 1.2rem;
+        border-radius: .5rem;
+        border: 1px solid $dark-1;
+        outline: none;
+        &:focus {
+            border: 1px solid $primary;
+            background-color: lighten($primary, 50);
+        }
+    }
+
+    textarea {
+        height: 15rem;
+    }
+    button {
+        border: 1px solid $primary;
+        background-color: $primary;
+        color: $light;
+        padding: .8rem 1.2rem;
+        border-radius: .5rem;
+        &:hover {
+            cursor: pointer;
+            background-color: $primary-dark;
+        }
+    }
+}
