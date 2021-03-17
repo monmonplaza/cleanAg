@@ -11,10 +11,10 @@ const News = () => {
           <h2>Latest Story</h2>
           <div className="news__grid">
             <div className="news__grid__item">
-              {NewsList.map((news) => {
-                if (news.featured == "yes") {
+              {NewsList.map((news, key) => {
+                if (news.featured === "yes") {
                   return (
-                    <div className="featured__news">
+                    <div className="featured__news" key={key}>
                       <img src={featNews} alt="" />
                       <div className="featured__news__content">
                         <small>{news.category}</small>

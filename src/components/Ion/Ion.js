@@ -34,7 +34,7 @@ const Ion = () => {
                       return <p>{paragraph}</p>;
                     })}
 
-                    <Anchor path="about" buttonStyle="btn--light">
+                    <Anchor path="about" btnStyle="btn--light">
                       {ion.link}
                     </Anchor>
                   </div>

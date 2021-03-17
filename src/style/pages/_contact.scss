@@ -1,0 +1,15 @@
+.page__contact {
+    margin-bottom: 20rem;
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        &__items {
+            .wrapper {
+                max-width: 50rem;
+            }
+            :is(input, textarea) {
+                width: 100%;
+            }
+        }
+    }
+}

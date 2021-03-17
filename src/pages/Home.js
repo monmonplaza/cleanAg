@@ -1,10 +1,9 @@
 import React from "react";
 import { Cta } from "../components/Cta/Cta";
 import Dream from "../components/Dream/Dream";
-import Footer from "../components/Footer/Footer";
 import Hero from "../components/Hero/Hero";
 import Ion from "../components/Ion/Ion";
-import News from "../components/news/News";
+import News from "../components/News/News";
 import Partner from "../components/Partner/Partner";
 
 const Home = () => {

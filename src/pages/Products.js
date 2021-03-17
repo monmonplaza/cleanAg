@@ -96,7 +96,7 @@ const Products = () => {
                 <Anchor path="contact" btnStyle="btn--primary">
                   Send us a Message
                 </Anchor>
-                <Anchor path="faq" btnStyle="btn--outline_light">
+                <Anchor path="faq" btnStyle="btn--outline_primary">
                   Frequently Ask
                 </Anchor>
               </div>
