@@ -9,7 +9,7 @@ const Ion = () => {
     <>
       {IonData.map((ion, key) => {
         return (
-          <section className="ion">
+          <section className="ion" data-key={key}>
             <img src={wageTop} alt="" className="wave wave__top" />
             <img src={wageBottom} alt="" className=" wave wave__bottom" />
             <div className="container">
@@ -20,7 +20,7 @@ const Ion = () => {
                       <img src={agPlus} alt="" />
                     </div>
 
-                    {ion.agplus.split("\n").map((paragraph, i) => {
+                    {ion.agplus.split("\n").map((paragraph) => {
                       return <p>{paragraph}</p>;
                     })}
                   </div>

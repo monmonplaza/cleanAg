@@ -1,15 +1,55 @@
 .page__contact {
-    margin-bottom: 20rem;
-    &__grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        &__items {
-            .wrapper {
-                max-width: 50rem;
-            }
-            :is(input, textarea) {
-                width: 100%;
-            }
-        }
+  margin-bottom: 20rem;
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4rem;
+    &__items {
+      .wrapper {
+        max-width: 50rem;
+      }
+      :is(input, textarea) {
+        width: 100%;
+      }
     }
+
+    h3 {
+      font-size: 3.5rem;
+      color: $primary-dark;
+    }
+  }
+
+  .contact__info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 4rem;
+    margin-top: 5rem;
+
+    &__item {
+      align-self: center;
+      h4 {
+        color: $dark;
+        margin-bottom: 1rem;
+      }
+      ul {
+        list-style: none;
+      }
+      li {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        svg {
+          margin-right: 0.5rem;
+          color: $primary-dark;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $primary-dark;
+      }
+    }
+  }
 }

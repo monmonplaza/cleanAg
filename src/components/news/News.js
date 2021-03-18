@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Anchor } from "../Anchor/Anchor";
-import featNews from "../../images/feature_news.jpg";
+
 import { NewsList } from "../Data/NewsList";
 const News = () => {
   return (
@@ -15,7 +15,7 @@ const News = () => {
                 if (news.featured === "yes") {
                   return (
                     <div className="featured__news" key={key}>
-                      <img src={featNews} alt="" />
+                      <img src={news.img} alt="" />
                       <div className="featured__news__content">
                         <small>{news.category}</small>
                         <h3>{news.title}</h3>
@@ -23,7 +23,7 @@ const News = () => {
                           <li>{news.date}</li>
                           <li>By: {news.author}</li>
                         </ul>
-                        <Anchor btnStyle="btn--outline_light">
+                        <Anchor path="/" btnStyle="btn--outline_light">
                           Continue Reading
                         </Anchor>
                       </div>
@@ -36,11 +36,11 @@ const News = () => {
               <div className="sidebar__news">
                 <div className="wrapper">
                   <h3>Other Stories</h3>
-                  {NewsList.slice(0, 3).map((news_side) => {
+                  {NewsList.slice(0, 3).map((news_side, key) => {
                     if ((news_side.featured = "no")) {
                       return (
                         <Link to="/">
-                          <div className="sidebar__news__item">
+                          <div className="sidebar__news__item" key={key}>
                             <small>{news_side.category}</small>
                             <h4>{news_side.title}</h4>
                             <p>{news_side.date}</p>

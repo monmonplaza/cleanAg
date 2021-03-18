@@ -1,5 +1,6 @@
 import React from "react";
 import { PartnerData, TimelineData } from "../Data/Home";
+import { DreamData } from "../Data/Home";
 const Partner = () => {
   return (
     <>
@@ -18,9 +19,9 @@ const Partner = () => {
             <div className="partner__grid">
               <div className="partner__grid__item flex__item">
                 <div className="timeline">
-                  {TimelineData.map((timeline) => {
+                  {TimelineData.map((timeline, key) => {
                     return (
-                      <div className="timeline__item">
+                      <div className="timeline__item" data-key={key}>
                         <h4>{timeline.year}</h4>
                         <p> {timeline.description}</p>
                       </div>
@@ -48,6 +49,22 @@ const Partner = () => {
               </div>
             );
           })}
+
+          {/* <div className="admin">
+            <div className="admin__grid">
+              {DreamData.map((admin, key) => {
+                return (
+                  <div className="admin__grid__item" key={key}>
+                    <div className="admin__box">
+                      <img src={admin.img} alt="" />
+                      <h3>{admin.name}</h3>
+                      <h4>{admin.title}</h4>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div> */}
         </div>
       </div>
     </>

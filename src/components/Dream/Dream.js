@@ -1,6 +1,6 @@
 import React from "react";
 import plusIcon from "../../images/icon_plus.png";
-import { DreamData } from "../Data/Home";
+
 const Dream = () => {
   return (
     <>
@@ -52,22 +52,6 @@ const Dream = () => {
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
-
-          <div className="admin">
-            <div className="admin__grid">
-              {DreamData.map((admin, key) => {
-                return (
-                  <div className="admin__grid__item">
-                    <div className="admin__box">
-                      <img src={admin.img} alt="" />
-                      <h3>{admin.name}</h3>
-                      <h4>{admin.title}</h4>
-                    </div>
-                  </div>
-                );
-              })}
             </div>
           </div>
         </div>

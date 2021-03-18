@@ -4,15 +4,14 @@ import Dream from "../components/Dream/Dream";
 import Hero from "../components/Hero/Hero";
 import Ion from "../components/Ion/Ion";
 import News from "../components/News/News";
-import Partner from "../components/Partner/Partner";
-
+import Nav from "../components/Nav/Nav";
 const Home = () => {
   return (
     <>
       <Hero />
       <Ion />
       <Dream />
-      <Partner />
+
       <Cta
         background="bt--primary"
         header="Want to know more?"

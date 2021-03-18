@@ -7,7 +7,7 @@ const Hero = () => {
     <>
       {HeroData.map((hero, key) => {
         return (
-          <section className="hero">
+          <section className="hero" key={key}>
             <div className="container">
               <div className="hero__grid">
                 <div className="hero__grid__item">
@@ -19,7 +19,7 @@ const Hero = () => {
                   </div>
                 </div>
                 <div className="hero__grid__item">
-                  <img src={HeroImg} alt="" />
+                  <img src="./img/hero.png" alt="" />
                 </div>
               </div>
             </div>
