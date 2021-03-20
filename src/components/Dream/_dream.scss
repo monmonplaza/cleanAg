@@ -7,11 +7,17 @@
     color: $primary;
     text-align: center;
     margin: 10rem 0;
+    @include media-query($mobile) {
+      margin: 5rem 0;
+    }
   }
   &__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 5rem;
+    @include media-query($mobile) {
+      grid-template-columns: 1fr;
+    }
   }
 
   .blue_text {

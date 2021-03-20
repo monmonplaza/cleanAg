@@ -19,7 +19,7 @@ const Hero = () => {
                   </div>
                 </div>
                 <div className="hero__grid__item">
-                  <img src="./img/hero.png" alt="" />
+                  <img src={HeroImg} alt="" />
                 </div>
               </div>
             </div>

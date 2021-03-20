@@ -60,15 +60,13 @@ const Stories = () => {
                   if (story.featured === "no" && story.other === "yes") {
                     return (
                       <div className="storybox">
-                        <img src="" alt="" />
+                        <img src={story.img} alt="" />
                         <div className="details">
-                          <h4>Lorem ipsum dolor sit amet.</h4>
-                          <small>March 2</small>
+                        <small>{story.date}</small>
+                          <h4>{story.title}</h4>
+                          
                           <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Similique, pariatur facilis. Possimus
-                            voluptatem quas obcaecati vitae est voluptatibus,
-                            accusamus itaque.
+                           {story.excerpt}
                           </p>
                         </div>
                       </div>

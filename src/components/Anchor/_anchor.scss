@@ -5,6 +5,10 @@
   display: inline-block;
   min-width: 20rem;
   text-align: center;
+  @include media-query($mobile) {
+    min-width: 15rem;
+    font-size: 1.2rem;
+  }
 }
 
 .btn--primary {
@@ -23,6 +27,9 @@
 
 .btn--medium {
   padding: 0.8rem 1.6rem;
+  @include media-query($mobile) {
+    padding: 0.5rem 1rem;
+  }
 }
 
 .btn--light {

@@ -13,6 +13,7 @@ export const NewsList = [
     category: "Events",
     img: featNews,
     other: "no",
+    body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dicta nihil, aliquam pariatur odio eligendi sapiente beatae veniam temporibus adipisci labore nisi harum optio quos delectus maxime esse ipsa nesciunt."
   },
 
   {
@@ -26,6 +27,7 @@ export const NewsList = [
     category: "Health",
     img: smNews1,
     other: "no",
+    body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dicta nihil, aliquam pariatur odio eligendi sapiente beatae veniam temporibus adipisci labore nisi harum optio quos delectus maxime esse ipsa nesciunt."
   },
 
   {
@@ -39,6 +41,7 @@ export const NewsList = [
     category: "Awards",
     img: smNews2,
     other: "no",
+    body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dicta nihil, aliquam pariatur odio eligendi sapiente beatae veniam temporibus adipisci labore nisi harum optio quos delectus maxime esse ipsa nesciunt."
   },
 
   {
@@ -51,6 +54,7 @@ export const NewsList = [
     category: "Awards",
     img: smNews2,
     other: "yes",
+    body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dicta nihil, aliquam pariatur odio eligendi sapiente beatae veniam temporibus adipisci labore nisi harum optio quos delectus maxime esse ipsa nesciunt."
   },
 
   {
@@ -63,6 +67,7 @@ export const NewsList = [
     category: "Awards",
     img: smNews2,
     other: "yes",
+    body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dicta nihil, aliquam pariatur odio eligendi sapiente beatae veniam temporibus adipisci labore nisi harum optio quos delectus maxime esse ipsa nesciunt."
   },
   {
     title: "Will Partner Co., Ltd. was commended by the city of Kyoto.",
@@ -74,6 +79,7 @@ export const NewsList = [
     category: "Awards",
     img: smNews2,
     other: "yes",
+    body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dicta nihil, aliquam pariatur odio eligendi sapiente beatae veniam temporibus adipisci labore nisi harum optio quos delectus maxime esse ipsa nesciunt."
   },
 
   {
@@ -86,6 +92,7 @@ export const NewsList = [
     category: "Awards",
     img: smNews2,
     other: "yes",
+    body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dicta nihil, aliquam pariatur odio eligendi sapiente beatae veniam temporibus adipisci labore nisi harum optio quos delectus maxime esse ipsa nesciunt."
   },
   {
     title: "Will Partner Co., Ltd. was commended by the city of Kyoto.",
@@ -97,6 +104,7 @@ export const NewsList = [
     category: "Awards",
     img: smNews2,
     other: "yes",
+    body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dicta nihil, aliquam pariatur odio eligendi sapiente beatae veniam temporibus adipisci labore nisi harum optio quos delectus maxime esse ipsa nesciunt."
   },
   {
     title: "Will Partner Co., Ltd. was commended by the city of Kyoto.",
@@ -108,5 +116,6 @@ export const NewsList = [
     category: "Awards",
     img: smNews2,
     other: "yes",
+    body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dicta nihil, aliquam pariatur odio eligendi sapiente beatae veniam temporibus adipisci labore nisi harum optio quos delectus maxime esse ipsa nesciunt."
   },
 ];

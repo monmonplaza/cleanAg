@@ -3,6 +3,9 @@
   &__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    @include media-query($mobile) {
+      grid-template-columns: 1fr;
+    }
     grid-gap: 4rem;
     &__items {
       .wrapper {

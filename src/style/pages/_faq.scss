@@ -11,6 +11,9 @@
     &__grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      @include media-query($mobile) {
+        grid-template-columns: 1fr;
+      }
       grid-gap: 4rem;
       margin-bottom: 2rem;
       border-bottom: 1px solid $dark-1;

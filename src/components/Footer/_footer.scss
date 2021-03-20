@@ -6,22 +6,34 @@
     position: absolute;
     bottom: 100%;
     width: 100%;
+    @include media-query($mobile) {
+      bottom: 99%;
+    }
   }
 
   &__grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 4rem;
+    @include media-query($mobile) {
+      grid-template-columns: 1fr;
+    }
     &__item {
       align-self: center;
+      @include media-query($mobile) {
+        text-align: center;
+      }
       ul {
         display: flex;
         list-style: none;
+        justify-content: center;
+        width: 100%;
         li {
           margin: 1rem;
           a {
             text-decoration: none;
             color: $light;
+            font-size: 1.2rem;
           }
         }
       }
@@ -32,6 +44,15 @@
     }
     &__item:last-child {
       justify-self: flex-end;
+      @include media-query($mobile) {
+        justify-self: center;
+      }
+      li {
+        a {
+          font-size: 4rem;
+        }
+      }
+
     }
   }
 }

@@ -29,6 +29,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 4rem;
+    @include media-query($mobile) {
+      grid-template-columns: 1fr;
+    }
     &__item {
       .wrapper {
         text-align: center;

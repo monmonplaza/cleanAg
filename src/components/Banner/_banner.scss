@@ -6,10 +6,16 @@
   background-color: $primary;
   color: $light;
   margin-bottom: 20rem;
+  h1 {
+    font-size: clamp(3.5rem, 5vw, 5rem);
+  }
   img {
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
+    @include media-query($mobile) {
+      top: 99%;
+    }
   }
 }

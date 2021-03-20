@@ -1,7 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import logo from "../../images/cleantec-logo.png";
 import { Link } from "react-router-dom";
+import {FaBars} from "react-icons/fa"
 const Nav = () => {
+
+const [menu, setMenu] = useState(false);
+const showMenu = () => setMenu(!menu)
   return (
     <>
       <header className="header">
@@ -10,8 +14,14 @@ const Nav = () => {
             <div className="branding">
               <img src={logo} alt="asdasd" />
             </div>
-            <nav>
-              <ul>
+
+            <div className="toggle__menu" onClick={showMenu}>
+                  <FaBars />
+            </div>  
+
+            <nav className={menu ? 'open' : ''}>
+            
+              <ul onClick={showMenu}>
                 <li>
                   <Link to="/">Home</Link>
                 </li>
@@ -32,6 +42,9 @@ const Nav = () => {
                   <Link to="/contact">Contact</Link>
                 </li>
               </ul>
+              <div className="close__mobile" onClick={showMenu}>
+                 Exit Menu
+              </div>
             </nav>
           </div>
         </div>

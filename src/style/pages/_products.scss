@@ -12,6 +12,9 @@
   &__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    @include media-query($mobile) {
+      grid-template-columns: 1fr;
+    }
     &__items {
       align-self: center;
     }
@@ -22,14 +25,17 @@
 
   h2 {
     color: $primary;
-    font-size: 8.5rem;
+    font-size: clamp(6rem, 10vw, 8.5rem)
   }
 
   h3 {
-    font-size: 5.5rem;
+    font-size: clamp(3.5rem, 10vw, 6.5rem);
     color: $primary-dark;
     transform: translateY(-7rem);
     margin-bottom: -5rem;
+    @include media-query($mobile) {
+      transform: translateY(-4.5rem);
+    }
   }
 
   a {

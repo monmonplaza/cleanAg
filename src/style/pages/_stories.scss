@@ -4,6 +4,11 @@
       display: grid;
       grid-template-columns: 45rem 1fr 1fr;
       grid-template-rows: 1fr 1fr;
+      @include media-query($mobile) {
+        grid-template-columns:  1fr;
+        grid-template-rows:unset;
+      }
+     
       grid-gap: 2rem;
     }
   }
@@ -20,6 +25,10 @@
 .story__big {
   grid-column: 1/3;
   grid-row: 1 / 3;
+  @include media-query($mobile) {
+    grid-column: unset;
+    grid-row: unset;
+  }
 }
 
 .story__big,
@@ -52,6 +61,9 @@
       font-size: 1.4rem;
       text-align: right;
       display: block;
+      @include media-query($mobile) {
+        font-size: 1.2rem;
+      }
     }
   }
 }
@@ -59,19 +71,53 @@
 .story__sm {
   h3 {
     font-size: 1.6rem;
+   
   }
 }
 
 .storylist {
+  margin-top: 4rem;
   &__grid {
     display: grid;
-    grid-template-columns: 1fr 42rem;
+    grid-template-columns: 1fr 43.5rem;
     grid-gap: 2rem;
+    @include media-query($mobile) {
+      grid-template-columns: 1fr;
+    }
   }
   &__grid__main {
     .inner__grid {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 2rem;
+      @include media-query($mobile) {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+  .storybox {
+    img {
+      width: 100%;
+    }
+
+    .details {
+      padding: 1rem;
+      small {
+        font-size: 1rem;
+        padding: .2rem 1rem;
+        background-color: $primary;
+        color: $light;
+        display: inline-block;
+        margin-bottom: .6rem;
+        border-radius: 1rem;
+      }
+      h4 {
+        margin-bottom: 1.5rem;
+      }
+
+      p {
+        font-size: 1.4rem;
+      }
     }
   }
 }

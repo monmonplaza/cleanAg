@@ -1,3 +1,10 @@
 @mixin transition($speed: 0.5s) {
   transition: $speed ease;
 }
+
+
+@mixin media-query($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
