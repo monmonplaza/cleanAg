@@ -9,7 +9,7 @@ const Ion = () => {
     <>
       {IonData.map((ion, key) => {
         return (
-          <section className="ion" data-key={key}>
+          <section className="ion" key={key}>
             <img src={wageTop} alt="" className="wave wave__top" />
             <img src={wageBottom} alt="" className=" wave wave__bottom" />
             <div className="container">

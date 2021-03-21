@@ -4,7 +4,8 @@ import Dream from "../components/Dream/Dream";
 import Hero from "../components/Hero/Hero";
 import Ion from "../components/Ion/Ion";
 import News from "../components/News/News";
-import Nav from "../components/Nav/Nav";
+
+//import Nav from "../components/Nav/Nav";
 const Home = () => {
   return (
     <>
@@ -21,6 +22,7 @@ const Home = () => {
         btnStyle="btn--outline_light"
       />
       <News />
+   
     </>
   );
 };

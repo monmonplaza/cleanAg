@@ -1,13 +1,21 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import LogoLight from "../../images/cleantec-logo_sm.png";
 import wageTop from "../../images/wave_top.png";
+import {Modal} from "../Modal/Modal";
 import {
   AiFillFacebook,
   AiFillTwitterSquare,
   AiFillYoutube,
 } from "react-icons/ai";
 const Footer = () => {
+
+  const [showModal, setShowModal] = useState(false);
+  const openModal = () => {
+    setShowModal(!showModal);
+   
+  };
+
   return (
     <>
       <footer className="footer">
@@ -61,7 +69,15 @@ const Footer = () => {
             </div>
           </div>
         </div>
+      <div className="copyright">
+        <p>&copy; 2021 All Right Reserved.</p>
+        <ul>
+          <li><button onClick={openModal}>Privacy Policy</button></li>
+        </ul>
+      </div>
       </footer>
+      
+      <Modal showModal = {showModal} setShowModal={setShowModal}/>
     </>
   );
 };

@@ -55,4 +55,30 @@
 
     }
   }
+
+  .copyright {
+    text-align: center;
+    font-size: 1.2rem;
+    color: $light;
+    display: flex;
+    justify-content: center;
+    p  {
+      margin-bottom: .5rem;
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      li {
+        margin: 0 1rem;
+        button {
+          color: $light;
+          font-size: 1.2rem;
+          border: none;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+
 }

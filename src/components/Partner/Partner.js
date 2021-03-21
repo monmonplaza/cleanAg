@@ -1,6 +1,6 @@
 import React from "react";
 import { PartnerData, TimelineData } from "../Data/Home";
-import { DreamData } from "../Data/Home";
+// import { DreamData } from "../Data/Home";
 const Partner = () => {
   return (
     <>
