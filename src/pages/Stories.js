@@ -16,7 +16,7 @@ const Stories = () => {
               {NewsList.map((story, key) => {
                 if (story.featured === "yes") {
                   return (
-                    <div className="story__big">
+                    <div className="story__big" key={key}>
                       <img src={story.img} alt="" />
                       <div className="story__details">
                         <h3>{story.title}</h3>
@@ -76,7 +76,27 @@ const Stories = () => {
               </div>
             </div>
             <div className="storylist__grid__sidebar">
-              <h2>sidebar</h2>
+              <h2>Other Stories</h2>
+              <div className="other__stories">
+              {NewsList.slice(0, 5).map((story, key) => {
+                 if( story.archive === "yes") {
+                  return(
+                    <div className="other__stories__item">
+                      <img src={story.img} alt=""/>
+                      <Link >
+                      <div className="content">
+                        <h4>{story.title}</h4>
+                        <small>{story.date}</small>
+                      </div>
+                      </Link>
+                    </div>
+                   )}
+                  
+              })}
+                
+
+
+              </div>
             </div>
           </div>
         </div>

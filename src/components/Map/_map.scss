@@ -1,0 +1,40 @@
+.map {
+   position: fixed; 
+   top: 0;
+   left: 0;
+   display: none;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   width: 100%;
+   background-color: rgba(0,0,0,0.6);
+   z-index: 999999;
+   &__wrapper {
+       background-color: $light;
+       min-height: 45rem;
+       width: 50vw;
+       padding: 3rem;
+       iframe {
+           width: 100%;
+           height: calc(45rem - 3rem);
+           border: none;
+       }
+
+       button {
+           text-align: center;
+           display: block;
+           border: none;
+           background-color: transparent;
+           color: $primary;
+           margin: 2rem auto 0;
+           cursor: pointer;
+           &:hover {
+               color: $primary-dark;
+           }
+       }
+   }
+}
+
+.map.show {
+    display: flex;
+}

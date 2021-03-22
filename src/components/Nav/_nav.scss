@@ -69,6 +69,10 @@
           a {
             text-decoration: none;
             text-transform: uppercase;
+            color: $primary;
+            &:hover {
+              color: $primary-dark;
+            }
             @include media-query($mobile) {
              font-size: 2rem;
              color: $light;

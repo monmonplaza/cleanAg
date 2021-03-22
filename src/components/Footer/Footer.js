@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import LogoLight from "../../images/cleantec-logo_sm.png";
 import wageTop from "../../images/wave_top.png";
 import {Modal} from "../Modal/Modal";
+import {Button} from "../Button"
 import {
   AiFillFacebook,
   AiFillTwitterSquare,
@@ -13,8 +14,9 @@ const Footer = () => {
   const [showModal, setShowModal] = useState(false);
   const openModal = () => {
     setShowModal(!showModal);
-   
   };
+ 
+  
 
   return (
     <>
@@ -72,7 +74,7 @@ const Footer = () => {
       <div className="copyright">
         <p>&copy; 2021 All Right Reserved.</p>
         <ul>
-          <li><button onClick={openModal}>Privacy Policy</button></li>
+          <li><Button onClick={openModal}>Privacy Policy</Button></li>
         </ul>
       </div>
       </footer>

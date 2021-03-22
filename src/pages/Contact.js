@@ -1,10 +1,15 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import Banner from "../components/Banner/Banner";
+import Map from "../components/Map/Map";
 import { Input, TextArea, Submit } from "../components/Form/Input";
 import { FaArrowRight } from "react-icons/fa";
 import { GiEnvelope, GiPhone, GiWoodenSign } from "react-icons/gi";
 const Contact = () => {
+
+  const [showMap, setShowMap] = useState(false);
+  const openMap = () => setShowMap(!showMap);
+
   return (
     <div>
       <Banner title="Contact" />
@@ -51,9 +56,7 @@ const Contact = () => {
                 </div>
 
                 <div className="contact__info__item">
-                  <Link path="/">
-                    View on Map <FaArrowRight />
-                  </Link>
+                    <button onClick={openMap}>View on Map <FaArrowRight /></button>
                 </div>
               </div>
             </div>
@@ -74,7 +77,8 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> 
+      <Map showMap={showMap}  setShowMap = { setShowMap}/>
     </div>
   );
 };
