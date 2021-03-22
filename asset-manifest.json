@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/cleanAg/static/css/main.631a2ed2.chunk.css",
+    "main.js": "/cleanAg/static/js/main.25f26283.chunk.js",
+    "main.js.map": "/cleanAg/static/js/main.25f26283.chunk.js.map",
+    "runtime-main.js": "/cleanAg/static/js/runtime-main.32da535a.js",
+    "runtime-main.js.map": "/cleanAg/static/js/runtime-main.32da535a.js.map",
+    "static/js/2.af2ddaaa.chunk.js": "/cleanAg/static/js/2.af2ddaaa.chunk.js",
+    "static/js/2.af2ddaaa.chunk.js.map": "/cleanAg/static/js/2.af2ddaaa.chunk.js.map",
+    "index.html": "/cleanAg/index.html",
+    "static/css/main.631a2ed2.chunk.css.map": "/cleanAg/static/css/main.631a2ed2.chunk.css.map",
+    "static/js/2.af2ddaaa.chunk.js.LICENSE.txt": "/cleanAg/static/js/2.af2ddaaa.chunk.js.LICENSE.txt",
+    "static/media/ag+.9404c801.png": "/cleanAg/static/media/ag+.9404c801.png",
+    "static/media/ceo.51c3fb23.png": "/cleanAg/static/media/ceo.51c3fb23.png",
+    "static/media/cleantec-logo.7dfa56db.png": "/cleanAg/static/media/cleantec-logo.7dfa56db.png",
+    "static/media/feature_news.63f53418.jpg": "/cleanAg/static/media/feature_news.63f53418.jpg",
+    "static/media/hero.89b4c322.png": "/cleanAg/static/media/hero.89b4c322.png",
+    "static/media/manager.6ccdf949.png": "/cleanAg/static/media/manager.6ccdf949.png",
+    "static/media/map.1c74d082.png": "/cleanAg/static/media/map.1c74d082.png",
+    "static/media/news-img-1.548c6e44.jpeg": "/cleanAg/static/media/news-img-1.548c6e44.jpeg",
+    "static/media/news-img-2.6efabb41.jpeg": "/cleanAg/static/media/news-img-2.6efabb41.jpeg",
+    "static/media/wave_banner.04e2078b.png": "/cleanAg/static/media/wave_banner.04e2078b.png",
+    "static/media/wave_bottom.198bd12d.png": "/cleanAg/static/media/wave_bottom.198bd12d.png",
+    "static/media/wave_top.1bce0c7f.png": "/cleanAg/static/media/wave_top.1bce0c7f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.32da535a.js",
+    "static/js/2.af2ddaaa.chunk.js",
+    "static/css/main.631a2ed2.chunk.css",
+    "static/js/main.25f26283.chunk.js"
+  ]
+}
